@@ -53,6 +53,7 @@ Follow these steps to set up and run the Django API backend:
     ```
 
 7. Run the development server:
+   before running the server, make sure to set the api key for the news article website to your own api key
 
     ```bash
     python manage.py runserver

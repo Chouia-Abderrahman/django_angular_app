@@ -5,7 +5,7 @@ from .models import NewsArticle
 from newsapi import NewsApiClient
 from .serializers import NewsArticleSerializer
 
-api_key = 'ffb18a9a6ebf43d4837ae3b068db4c9e'
+api_key = 'you_api_key'
 
 @api_view(['GET'])
 def fetch_news(request):

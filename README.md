@@ -13,14 +13,10 @@ Follow these steps to set up and run the Django API backend:
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/your-username/your-project.git
-    ```
-
 2. Change to the project directory:
 
     ```bash
-    cd your-project
+    cd django_angular_app
     ```
 
 3. Create a virtual environment:
@@ -61,6 +57,33 @@ Follow these steps to set up and run the Django API backend:
     ```bash
     python manage.py runserver
     ```
+## Running django backend using Docker
+or you can use docker to run the django backend:
+Certainly! Here's the updated response:
+
+1. **Build the Docker image:**
+
+   ```bash
+   docker build -t django_backend:latest .
+   ```
+
+   - `-t`: Specifies the name and optionally a tag to the Docker image.
+   - `django_backend`: This is the desired name for your Docker image.
+   - `latest`: This is the tag for versioning, indicating it's the latest version.
+
+   The dot (`.`) at the end indicates the build context is the current directory.
+
+2. **Run the Docker container:**
+
+   ```bash
+   docker run -p 8000:8000 django_backend:latest
+   ```
+
+   - `-p 8000:8000`: Maps port 8000 on your local machine to port 8000 in the Docker container. Adjust the ports as needed.
+
+   After running this command, your Docker container should be up and running.
+
+Remember to adjust the ports and tags according to your application's configuration and versioning needs.
 
 ### API Documentation
 
